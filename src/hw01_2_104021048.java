@@ -5,6 +5,9 @@ public class hw01_2_104021048 extends Frame {
 	private Label name = new Label("姓名: ");
 	private Label hight = new Label("身高: ");
 	private Label weight = new Label("體重: ");
+	private Label cm = new Label("cm");
+	private Label kg = new Label("kg");
+	private Label cm2 = new Label("cm");
 	private Label sex = new Label("性別: ");
 	private Label waistline = new Label("腰圍: ");
 	private TextField name1 = new TextField();
@@ -38,12 +41,15 @@ public class hw01_2_104021048 extends Frame {
 		weight.setBounds(20, 100, 40, 25);
 		sex.setBounds(200, 50, 40, 25);
 		waistline.setBounds(200, 75, 40, 25);
-		name1.setBounds(60, 50, 120, 25);
-		hight1.setBounds(60, 75, 120, 25);
-		weight1.setBounds(60, 100, 120, 25);
+		name1.setBounds(60, 50, 100, 25);
+		hight1.setBounds(60, 75, 100, 25);
+		weight1.setBounds(60, 100, 100, 25);
+		cm.setBounds(160, 75, 20, 25);
+		kg.setBounds(160, 100, 20, 25);
 		boy.setBounds(260, 50, 30, 25);
 		girl.setBounds(300, 50, 30, 25);
-		waistline1.setBounds(240, 75, 120, 25);
+		waistline1.setBounds(240, 75, 100, 25);
+		cm2.setBounds(340, 75, 20, 25);
 		count.setBounds(380, 75, 100, 25);
 		count.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent m) {
@@ -71,9 +77,9 @@ public class hw01_2_104021048 extends Frame {
 					show.append(n1 + ",您好\n" + "BMI= " + bmi + "你屬於重度肥胖");
 				}
 				if (b = true && 90 <= wa2) {
-					show.append("\n你的腰圍超正常值了");
+					show.append("\n你的腰圍超過正常值了!");
 				} else if (g = true && 80 <= wa2) {
-					show.append("\n你的腰圍超正常值了");
+					show.append("\n你的腰圍超過正常值了!");
 				}
 
 			}
@@ -94,6 +100,9 @@ public class hw01_2_104021048 extends Frame {
 		this.add(name1);
 		this.add(hight1);
 		this.add(weight1);
+		this.add(cm);
+		this.add(kg);
+		this.add(cm2);
 		this.add(boy);
 		this.add(girl);
 		this.add(waistline1);
